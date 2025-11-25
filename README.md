@@ -1,20 +1,22 @@
-# Uchiha Bot
+# Bot-Uchiha
 
-![Uchiha Bot](https://media.giphy.com/media/KSAG8wm8JYkqc/giphy.gif)
+Welcome to the Bot-Uchiha project!
 
-This is a bot dedicated to the Uchiha clan from Naruto. It provides various functionalities related to the Uchiha clan, including but not limited to:
+## About
+This bot is inspired by the Akatsuki from Naruto.
 
-1. **Information Retrieval**: Get detailed information about Uchiha characters.
-2. **Interactive Quizzes**: Test your knowledge about the Uchiha clan.
-3. **Fan Art Showcase**: View and share fan art dedicated to the Uchihas.
+![Akatsuki](https://media.giphy.com/media/KSAG8wm8JYkqc/giphy.gif)
 
 ## Features
-- User-friendly interface
-- Regular updates with new Uchiha-related content
-- Community sharing options
+- Feature 1
+- Feature 2
 
-## Contributors
-- te1436
+## Installation
+1. Clone the repository
+2. Install dependencies
+
+## Usage
+Run the bot with your configurations.
 
 ## License
-MIT License
+This project is licensed under the MIT License.
