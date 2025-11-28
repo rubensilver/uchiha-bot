@@ -43,7 +43,7 @@ const comandosAdmin = {
   },
   groupInfo: function () {
     // Informações sobre o grupo
-    return `Informações do grupo: Aqui reside o clã Uchiha. Força e lealdade são suas virtudes!`;
+    return 'Informações do grupo: Aqui reside o clã Uchiha. Força e lealdade são suas virtudes!';
   },
 };
 

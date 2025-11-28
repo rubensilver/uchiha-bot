@@ -61,7 +61,10 @@ try {
       }
     } catch (err) {
       // não fatal — apenas loga e continua com fallback
-      console.error('[engine-requirements] aviso ao ler package.json:', err && err.message ? err.message : String(err));
+      console.error(
+        '[engine-requirements] aviso ao ler package.json:',
+        err && err.message ? err.message : String(err),
+      );
     }
   }
 
@@ -72,16 +75,19 @@ try {
   if (currentMajor < minMajor) {
     exitWithMessage(
       `Versão do Node.js insuficiente. Requerido: >=${minMajor}.x (detectado: ${nodeVersion}).\n` +
-      'Em GitHub Actions atualize a ação setup-node para usar uma versão compatível (ex: 16 ou 18):\n' +
-      "  uses: actions/setup-node@v3\n" +
-      "  with:\n" +
-      "    node-version: '18'\n" +
-      '\nSe você precisar de compatibilidade diferente, ajuste "engines.node" em package.json ou o pipeline.'
+        'Em GitHub Actions atualize a ação setup-node para usar uma versão compatível (ex: 16 ou 18):\n' +
+        '  uses: actions/setup-node@v3\n' +
+        '  with:\n' +
+        "    node-version: '18'\n" +
+        '\nSe você precisar de compatibilidade diferente, ajuste "engines.node" em package.json ou o pipeline.',
     );
   }
 
   // Tudo OK
   process.exit(0);
 } catch (err) {
-  exitWithMessage('Erro durante a verificação de requisitos do Node: ' + (err && err.message ? err.message : String(err)));
+  exitWithMessage(
+    'Erro durante a verificação de requisitos do Node: ' +
+      (err && err.message ? err.message : String(err)),
+  );
 }

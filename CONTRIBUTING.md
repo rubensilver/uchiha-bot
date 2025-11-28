@@ -3,6 +3,7 @@
 Obrigado por considerar contribuir para o Bot-Uchiha! Este documento fornece diretrizes básicas sobre como você pode contribuir com o projeto.
 
 ## Fluxo de Contribuição
+
 1. **Fork o Repositório**: Comece fazendo um fork deste repositório para a sua conta do GitHub.
 2. **Clone o Repositório**: Clone seu fork localmente:
    ```bash
@@ -26,18 +27,22 @@ Obrigado por considerar contribuir para o Bot-Uchiha! Este documento fornece dir
 7. **Crie um Pull Request**: Vá para a página do repositório original no GitHub e clique no botão "New Pull Request". Selecione a branch que você criou e envie o pull request.
 
 ## Exemplo de Pull Request
+
 Ao criar um pull request, considere usar o seguinte modelo:
 
 ### Título do Pull Request
+
 - Resumo da alteração:
 
 ### Descrição
+
 - Explique o que você fez e por quê.
 - Inclua informações relevantes, como:
-   - Problema que foi resolvido
-   - Novas funcionalidades que foram adicionadas
+  - Problema que foi resolvido
+  - Novas funcionalidades que foram adicionadas
 
 ### Checklist
+
 - [ ] Meu código segue as diretrizes de estilo deste projeto.
 - [ ] Fiz testes adequados para garantir que minha alteração não quebrou nada.
 - [ ] Documentação foi atualizada, se necessário.

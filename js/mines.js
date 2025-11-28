@@ -1,5 +1,5 @@
 async function getMinesPositions(minecor, mines_qnts) {
-  var mines_cord = [];
+  let mines_cord = [];
   while (mines_cord.length != mines_qnts) {
     i = Math.floor(Math.random() * minecor.length + 0);
     if (!mines_cord.includes(minecor[i])) {

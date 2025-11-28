@@ -61,7 +61,10 @@ try {
       }
     } catch (err) {
       // não fatal — apenas loga e continua com fallback
-      console.error('[engine-requirements] aviso ao ler package.json:', err && err.message ? err.message : String(err));
+      console.error(
+        '[engine-requirements] aviso ao ler package.json:',
+        err && err.message ? err.message : String(err),
+      );
     }
   }
 
@@ -72,17 +75,18 @@ try {
   if (currentMajor < minMajor) {
     exitWithMessage(
       `Versão do Node.js insuficiente. Requerido: >=${minMajor}.x (detectado: ${nodeVersion}).\n` +
-      'Em GitHub Actions atualize a ação setup-node para usar uma versão compatível (ex: 16 ou 18):\n' +
-      "  uses: actions/setup-node@v3\n" +
-      "  with:\n" +
-      "    node-version: '18'\n"
+        'Em GitHub Actions atualize a ação setup-node para usar uma versão compatível (ex: 16 ou 18):\n' +
+        '  uses: actions/setup-node@v3\n' +
+        '  with:\n' +
+        "    node-version: '18'\n",
     );
   }
 
   // Versão ok
-  console.log(`[engine-requirements] OK: Node.js ${nodeVersion} (requerido: >=${minMajor}.x)`);
+  console.log(
+    `[engine-requirements] OK: Node.js ${nodeVersion} (requerido: >=${minMajor}.x)`,
+  );
   process.exit(0);
-
 } catch (err) {
   const msg = err && err.message ? err.message : String(err);
   exitWithMessage('Erro inesperado: ' + msg);

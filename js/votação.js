@@ -14,7 +14,7 @@ const DeletarVotos = (IDGRUPO) => {
     processo = votacao.indexOf(IDGRUPO);
   }
   fs.writeFileSync(
-    `./database/func/votacao/voting.json`,
+    './database/func/votacao/voting.json',
     JSON.stringify(votacao),
   );
   fs.unlinkSync(`./database/func/votacao/votos/${IDGRUPO}.json`);
@@ -23,8 +23,8 @@ const DeletarVotos = (IDGRUPO) => {
 
 const AdicionarVoto = async (from, R1, R2, R3, R4, mention) => {
   votacao.push(IDGRUPO);
-  fs.writeFileSync(`./database/func/votacao/p_votos/${IDGRUPO}.json`, `[]`);
-  fs.writeFileSync(`./database/func/votacao/votos/${IDGRUPO}.json`, `[]`);
+  fs.writeFileSync(`./database/func/votacao/p_votos/${IDGRUPO}.json`, '[]');
+  fs.writeFileSync(`./database/func/votacao/votos/${IDGRUPO}.json`, '[]');
   fs.writeFileSync(
     './database/func/votacao/voting.json',
     JSON.stringify(votacao),

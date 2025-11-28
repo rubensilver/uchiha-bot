@@ -1,4 +1,4 @@
-var imgbbb = [
+let imgbbb = [
   '77ef5c2b86b834656e4503dace1c9bcd',
   'bff534ea6eb6f5583aca913c5fd74a0d',
   '7f82cca2fd09d9962b83f01fb8e5d442',
